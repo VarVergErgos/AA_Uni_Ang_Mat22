@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 
+import { TooltipComponent, TooltipPosition } from '@angular/material/tooltip';
+import { FormControl } from '@angular/forms';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar'; 
 import { MatIconModule } from '@angular/material/icon'; 
@@ -35,7 +37,9 @@ import { MatTabsModule } from '@angular/material/tabs';
     MatListModule,
     MatMenuModule,
     MatTableModule,
-    MatTabsModule
+    MatTabsModule,
+    TooltipComponent,
+    FormControl
   ],
   providers: [],
   bootstrap: [AppComponent]
