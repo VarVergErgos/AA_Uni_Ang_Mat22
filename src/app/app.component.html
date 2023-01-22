@@ -1,15 +1,29 @@
+<mat-sidenav-container fullscreen>
+  <mat-sidenav #sidenav>
+    <mat-nav-list (click)="sidenav.close()">
+      <a mat-list-item routerLink="/">
+        <mat-icon>library_books</mat-icon>
+        <span>Home</span>
+      </a>
 
-  
-<mat-toolbar color="primary">
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+       <a mat-list-item routerLink="/courses">
+        <mat-icon>library_books</mat-icon>
+        <span>Courses</span>
+      </a>
+      <a mat-list-item routerLink="/about">
+        <mat-icon>question_answer</mat-icon>
+        <span>About</span>
+      </a>
+
+
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-toolbar color="primary">
+    <button type="button" mat-icon-button (click)="sidenav.open()">
       <mat-icon>menu</mat-icon>
     </button>
-    <span>My App</span>
-    <span class="example-spacer"></span>
-    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-      <mat-icon>favorite</mat-icon>
-    </button>
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-      <mat-icon>share</mat-icon>
-    </button>
   </mat-toolbar>
+
+  <router-outlet></router-outlet>
+</mat-sidenav-container>
