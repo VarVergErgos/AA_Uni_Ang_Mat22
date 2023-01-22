@@ -12,6 +12,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { AboutComponent } from './about/about.component'; 
 import { MatListModule } from '@angular/material/list';
 import { CoursesComponent } from './courses/courses.component'; 
+import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { CoursesComponent } from './courses/courses.component';
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    MatListModule
+    MatListModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

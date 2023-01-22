@@ -7,14 +7,13 @@
       </a>
 
        <a mat-list-item routerLink="/courses">
-        <mat-icon>library_books</mat-icon>
+        <mat-icon>insert_emoticon</mat-icon>
         <span>Courses</span>
       </a>
       <a mat-list-item routerLink="/about">
         <mat-icon>question_answer</mat-icon>
         <span>About</span>
       </a>
-
 
     </mat-nav-list>
   </mat-sidenav>
@@ -23,6 +22,29 @@
     <button type="button" mat-icon-button (click)="sidenav.open()">
       <mat-icon>menu</mat-icon>
     </button>
+
+
+    <!--Navigation horizontal not for sidenava-->
+    <!--Anker Element-->
+    <a mat-button [matMenuTriggerFor]="dropdown">
+      Screens-Dropdown
+    </a>
+    <mat-menu #dropdown>
+
+      <button mat-menu-item routerLink="/courses">Courses</button>
+      <button mat-menu-item routerLink="/about">About</button>
+    </mat-menu>
+    
+    <a mat-button>
+       <mat-icon>person_add</mat-icon>
+      Register
+    </a>
+    <a mat-button>
+       <mat-icon>account_circle</mat-icon>
+      Login
+    </a>
+<!--End Navigation horizontal not for sidenava-->
+
   </mat-toolbar>
 
   <router-outlet></router-outlet>
