@@ -13,13 +13,16 @@ import { AboutComponent } from './about/about.component';
 import { MatListModule } from '@angular/material/list';
 import { CoursesComponent } from './courses/courses.component'; 
 import { MatMenuModule } from '@angular/material/menu';
-
+import { AddNewCourseComponent } from './add-new-course/add-new-course.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatTabsModule } from '@angular/material/tabs';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AboutComponent,
-    CoursesComponent
+    CoursesComponent,
+    AddNewCourseComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +33,9 @@ import { MatMenuModule } from '@angular/material/menu';
     MatIconModule,
     MatButtonModule,
     MatListModule,
-    MatMenuModule
+    MatMenuModule,
+    MatTableModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
