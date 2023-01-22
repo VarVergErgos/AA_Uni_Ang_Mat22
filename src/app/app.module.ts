@@ -18,6 +18,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { AddNewCourseComponent } from './add-new-course/add-new-course.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatTabsModule } from '@angular/material/tabs';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,8 +39,6 @@ import { MatTabsModule } from '@angular/material/tabs';
     MatMenuModule,
     MatTableModule,
     MatTabsModule,
-    TooltipComponent,
-    FormControl
   ],
   providers: [],
   bootstrap: [AppComponent]
